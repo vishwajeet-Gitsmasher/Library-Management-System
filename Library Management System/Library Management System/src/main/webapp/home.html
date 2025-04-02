@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Actions</title>
+<style>
+    /* Page Styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('bookms.png') no-repeat center center; /* Use your background image */
+        background-size: cover; /* Ensure it covers the full viewport */
+        color: #333;
+    }
+
+    /* Container Styling */
+    .container {
+        background: rgba(255, 255, 255, 0.9);  /* Transparent white layer for readability */
+        padding: 40px;
+        width: 400px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        text-align: center;
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h1 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Form Styling */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        background: #007bff;
+        color: white;
+        padding: 12px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    }
+
+    button:hover {
+        background: #0056b3;
+        box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+        transform: translateY(-5px);
+    }
+
+    button:active {
+        transform: scale(0.98);
+    }
+
+    /* Link Styling */
+    button a {
+        text-decoration: none;   /* Remove underline */
+        color: white;            /* Set text color to white */
+        font-weight: bold;
+        display: block;          /* Ensure the entire button area is clickable */
+    }
+
+    /* Back Button */
+    .back-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background: #28a745;
+        padding: 12px 20px;
+        border-radius: 8px;
+        transition: all 0.3s;
+    }
+
+    .back-btn:hover {
+        background: #218838;
+        box-shadow: 0 8px 20px rgba(40, 167, 69, 0.5);
+        transform: translateY(-5px);
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .container {
+            width: 90%;
+            padding: 25px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        button {
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to Library Management System</h1>
+
+    <button>
+        <a href="login.html">Admin Login</a>
+    </button>
+    <br><br>
+    <button>
+        <a href="customerlogin.html">Customer Login</a>
+    </button>
+</div>
+
+</body>
+</html>

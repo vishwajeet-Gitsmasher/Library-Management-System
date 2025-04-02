@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library Management System</title>
+<style>
+    /* Reset and Page Styling */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #e9f5ff; /* Light blue background */
+        color: #333;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Header Styling */
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #28a745; /* Green Header */
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    /* Container Styling */
+    .container {
+        background: white;
+        padding: 40px;
+        width: 400px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h3 {
+        font-size: 22px;
+        color: #28a745;
+        margin-bottom: 20px;
+    }
+
+    /* Form Styling */
+    label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    button:hover {
+        background: #218838;
+        box-shadow: 0 8px 20px rgba(40, 167, 69, 0.5);
+        transform: translateY(-3px);
+    }
+
+    /* Register Link Styling */
+    .register-link {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .register-link a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .register-link a:hover {
+        text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            width: 90%;
+            padding: 25px;
+        }
+
+        button {
+            font-size: 14px;
+        }
+    }
+    
+    
+    #bt{
+    	background: blue;
+    } 
+    
+    a {
+    	
+    	color: white;
+    	text-decoration: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">Library Management System</div>
+
+<div class="container">
+    <h3>Customer Login</h3>
+
+    <form action="customerlogin" method="POST">
+        <label for="cid">Customer ID:</label>
+        <input type="text" id="cid" name="cid" placeholder="Enter your ID" required>
+
+        <label for="cname">Customer Name:</label>
+        <input type="text" id="cname" name="cname" placeholder="Enter your name" required>
+
+        <button type="submit" name="sb">Login</button>
+
+        <div class="register-link">
+            Don't have an account? <a href="customer_register.html">Register here</a>
+        </div>
+        <br>
+        <button id="bt"><a href="home.html" class="btn"> Back to Home</a></button>
+    
+    </form>
+</div>
+
+</body>
+</html>
